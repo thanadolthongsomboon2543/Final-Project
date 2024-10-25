@@ -1,0 +1,144 @@
+body {
+    background-color: #0047b5;
+    
+}
+
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #e1e1e1;
+    padding: 30px;
+    width: 300px;
+    margin: 0 auto;
+    border: 2px solid black;
+}
+
+.center {
+    font-style: normal;
+    background-color: white;
+    text-align: center;
+    border: 1.5px solid black;
+    padding: 10px;
+    width: 150px;
+}
+.btn {
+    border: 2px solid black;
+    background-color: rgb(184, 231, 255);
+    padding: 25px 35px;
+    width: 49%;
+    margin-bottom: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block 
+  }
+
+a:link {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+a:active {
+    color: violet;
+    background-color: transparent;
+    text-decoration: underline;
+}
+
+
+.column {
+    float: right;
+    width: 60%;
+    padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.menu-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+/* CSS เรียงแต่ละองค์ปุ่มและ "menu heading" แนวตั้ง */
+.menu-container {
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 30px;
+    width: 600px;
+    margin: 0 auto;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+
+/* เรียงเป็นแถวละ 3 ปุ่ม 4 แถว และเอาปุ่ม "ออกจากระบบ" ไว้ที่แถวสุดท้าย */
+.menu-button {
+    background-color: #92fff2; /* เปลี่ยนสีพื้นหลังของปุ่มที่นี่ */
+    border: 2px solid black;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    min-width: 150px;
+}
+
+/* เพิ่มการจัดเรียงเมนูแบบ 4x3 */
+.menu-button:nth-child(3n+1) {
+    clear: left;
+}
+
+/* ปรับขนาดสำหรับหน้าจอเล็ก */
+@media screen and (max-width: 768px) {
+    .menu-button {
+        font-size: 14px;
+        min-width: 120px;
+    }
+}
+
+    /* กำหนดให้ปุ่มแต่ละปุ่มแสดงในแถวเดียวกัน */
+    .menu-button {
+        clear: none;
+    }
+
+
+.menu-link {
+    color: white;
+    text-decoration: none;
+}
+
+.menu-button:hover {
+    background-color: #8f8f8f; /* เปลี่ยนสีพื้นหลังของปุ่มเมื่อเม้าส์ hover ที่นี่ */
+}
+
+
